@@ -1,0 +1,5 @@
+button[type=button] {
+    font-size: 20px;
+    color: rgb(243, 172, 211);
+    border:3px dashed rgb(247, 141, 190);
+}

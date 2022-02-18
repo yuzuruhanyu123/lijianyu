@@ -1,0 +1,829 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset = "utf-8">
+    </head>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        .kuang{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background-image: url(image/A.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        .bubble{
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: inset 0 0 8px  #fff;
+            animation: flutter 10s infinite;
+            opacity: 0;
+        }
+        @keyframes flutter {
+            0%{
+                transform: translateX(0);
+                bottom: -100px;
+                opacity: 1;
+            }
+            50%{
+                transform: translateX(100px);
+                opacity: 0.5;
+            }
+
+            
+            100%{
+                transform: translateX(0px);
+                bottom: 100%;
+                opacity: 0;
+            }
+        }
+        .bubble:nth-child(1){
+            left: -10%;
+            width: 50px;
+            height: 50px; 
+            animation-duration: 9s;
+            animation-delay: 0.1s;
+        }
+        .bubble:nth-child(2){
+            left: 15%;
+            width: 20px;
+            height: 20px;
+            animation-duration: 6s;
+            animation-delay: 1.5s;
+        }
+        .bubble:nth-child(3){
+            left: 20%;
+            width: 60px;
+            height: 60px;
+            animation-duration: 10s;
+        }
+        .bubble:nth-child(4){
+            left: 30%;
+            width: 30px;
+            height: 30px;
+            animation-duration: 5.5s;
+            animation-delay: 1.5s;
+
+        }
+        .bubble:nth-child(5){
+            left: 40%x;
+            width: 50px;
+            height: 50px;
+            animation-duration: 12s;
+        }
+        .bubble:nth-child(6){
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            animation-duration: 6s;
+            animation-delay: 1s;
+
+        }
+        .bubble:nth-child(7){
+            left: 60%;
+            width: 40px;
+            height: 40px;
+            animation-duration: 8s;
+            animation-delay: 1s;
+
+        }
+        .bubble:nth-child(8){
+            left: 65%;
+            width: 60px;
+            height: 60px;
+            animation-duration: 15s;
+          
+        }
+        .bubble:nth-child(9){
+            left: 80%;
+            width: 55px;
+            height: 55px;
+            animation-duration: 9s;
+            animation-delay: 0.5s;
+            
+        }
+        .bubble:nth-child(10){
+            left: 100%;
+            width: 40px;
+            height: 40px;
+            animation-duration: 12s;
+        }
+        audio{
+            width: 0;
+        }
+        h{
+            font-size: 30px;
+            color: rgb(72, 50, 172);
+        }
+        p{
+            font-size: 20px;
+            margin-left: 50px;
+            background-color: rgba(205, 231, 255, 0.658);
+        }
+        li{
+            margin-left: 50px;
+            font-size: 50px;
+        }
+        video{
+            margin-left: 50px;
+        }
+        img{
+            margin-left: 50px;
+        }
+        img {
+            cursor: pointer;
+            transition: all 0.9s;
+        }
+        img:hover{
+            margin: 50px;
+            transform: scale(2,2);
+            transform-origin: 20px 20px;
+        }
+        </style>
+    
+    <body>
+        <div class="kuang">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div class="photo">
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/b.jpg" width="200px" height="400px">
+                <img src="image/a.jpg" width="200px" height="400px">
+                <p>一起在便利店上班的时候 我不喜欢和另一个人搭班 这也成为我们交流的开始。后来有些人就调侃我说我够不到电闸 而且那个时候是喊我吴哥 哈哈哈。</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/e.jpg" width="200px" height="250px">
+                <img src="image/c.jpg" width="200px" height="400px">
+                <img src="image/d.jpg" width="200px" height="400px">
+                <p>后来我们会一起在便利店上早班 我不喜欢喝饮料 但是那一次出于礼貌我尝试了这个没有喝过的饮料 酸酸的 他很喜欢喝。他经常被桃源街的阿姨叫去存钱 经常见不到他 有一次回来给我带了碗饺子 然后让我喊他回来 导致那个阿姨觉得我是刚来的怎么什么都不会 有点嫌弃我 呜呜呜，，，</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <video src="image/g.mp4" width="300px" height="200px" controls="controls"></video>
+                <img src="image/h.jpg" width="200px" height="250px">
+                <p>可能因为我们年龄相近我对他没有防备感 他也是 他就约我出去打篮球 我说我不会 他就说我可以看他打，后来这变成他总是炫耀给其他人的一个点 他说他随便一约我我就出来了 他也没有想到我会同意 但是我当时也没有想这些 我觉得作为朋友出去是正常的。我第一次看见小宇我觉得他是一个很积极乐观的人 就很符合他打篮球的时候的样子 然后有一次我看见他坐在他爸爸的电动车上抽烟 又是一辆很大很不符合他的车 不符合我感觉的抽着烟 感觉挺煞风景的 明明乐观向上的好孩子要这样 真的是。</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/i.jpg" width="200px" height="400px">
+                <img src="image/j.jpg" width="200px" height="400px">
+                <img src="image/k.jpg" width="200px" height="400px">
+                <img src="image/m.jpg" width="200px" height="400px">
+                <img src="image/n.jpg" width="200px" height="400px">
+                <img src="image/p.jpg" width="200px" height="400px">
+                <img src="image/q.jpg" width="200px" height="400px">
+                <p>我们越来越熟悉 在微信上聊天也会偶尔调侃对方 那个时候说的最多的话就是拿工资威胁我 这个时候也有我们最开始的承诺 李键宇说要开一个便利店然后等我回来的时候我继续去打工还他钱  只是后来的后来就升级了这个承诺 不是打工还他钱 而是等我回来当他的老板娘</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/x.jpg" width="200px" height="400px">
+                <img src="image/u.jpg" width="200px" height="400px">
+                <video src="image/v.mp4" width="300px" height="200px" controls="controls"></video>
+                <img src="image/t.jpg" width="200px" height="250px">
+                <p>作为一个公平的店长会给我开小门 会让我轻松。还会在手机上跟我闹小情绪我哄一下之后对我卖萌 我当时就想他会不会也对别人这样呢。晚上我们一起去西苑打球 他穿了他喜欢的衣服</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/s.jpg" width="200px" height="150px">
+                <img src="image/y.jpg" width="200px" height="250px">
+                <img src="image/z.jpg" width="200px" height="400px">
+                <p>我开始期待上班 但是我也还记得每次早上迟到去看到他一脸懒洋洋很累没有力气的样子。他提议在我走的时候互相准备一个小礼物送给对方 可能只是想留住一段快乐的回忆吧 而且还跟我强调不能先买</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/ee.jpg" width="500px" height="100px">
+                <img src="image/bb.jpg" width="250px" height="200px">
+                <img src="image/dd.jpg" width="250px" height="200px">
+                <img src="image/aa.jpg" width="150px" height="200px">
+                <img src="image/cc.jpg" width="150px" height="200px">
+                <p>不记得什么时候在一起的了 好像就是互相都产生了那样的想法然后就很默契的在一起了一样。他跟我说他截图截到了一个好的数字他很开心。我们经常在店里吃东西 每样东西都会买两份然后一起拍个照 只是后来都是买一份一起吃了。第五张图片小宇觉得不好看 都是对于我来说的话我就觉得会让我想到那个时候的时光 我们很快乐 他很活泼温柔</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/ff.jpg" width="200px" height="200px">
+                <img src="image/gg.jpg" width="200px" height="270px">
+                <video src="image/hh.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>在店里的时光</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/mm.jpg" width="150px" height="200px">
+                <img src="image/qq.jpg" width="250px" height="200px">
+                <img src="image/oo.jpg" width="250px" height="200px">
+                <img src="image/rr.jpg" width="150px" height="200px">
+                <img src="image/pp.jpg" width="250px" height="200px">
+                <img src="image/nn.jpg" width="150px" height="200px">
+                <img src="image/ss.jpg" width="150px" height="200px">
+                <p>他在鸿城广场店我在临江花园 然后我关门去找他 我点了一个蜜雪冰城 然后骑手不知道两个店离得这么近就送错到他那 刚好我就过去了。晚上我们去吃肯德基嘿嘿</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/ii.jpg" width="200px" height="150px">
+                <img src="image/jj.jpg" width="100px" height="100px">
+                <img src="image/kk.jpg" width="200px" height="150px">
+                <video src="image/ll.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>那天我们去丰宁小吃街吃了好多好吃的 还一起去看了电影 我们不知道看什么 他说去看唐人街探案 我就说我没有看过第一部第二部 不想看这个 他就很温柔的跟我说他告诉我剧情然后我们再去看 他就一直很耐心的跟我说第一部第二部发生的情节 最后看了感觉还可以。后来小宇接了个电话心情就不好我的车车到鱼翅路也没有电了 就...</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/yy.jpg" width="150px" height="200px">
+                <img src="image/zz.jpg" width="150px" height="200px">
+                <img src="image/aaa.jpg" width="250px" height="200px">
+                <img src="image/bbb.jpg" width="150px" height="200px">
+                <p>后来小宇回来啦 很想他 他说他也很想我 然后在他的诱骗之下...</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/111.jpg" width="250px" height="200px">
+                <img src="image/33.jpg" width="250px" height="250px">
+                <img src="image/34.jpg" width="250px" height="200px">
+                <img src="image/35.jpg" width="250px" height="200px">
+                <img src="image/36.jpg" width="250px" height="300px">
+                <img src="image/222.jpg" width="250px" height="300px">
+                <img src="image/37.jpg" width="250px" height="300px">
+                <img src="image/38.jpg" width="250px" height="300px">
+                <p>这是我们第一次出去逛街约会吧 我陪着小宇去做了一个一般般的头发然后我们去逛街拍照 我记得风吹我裙子的时候他还啧了一声不高兴 我穿裙子他还问我冷不冷 反正就是不想我穿裙子</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/44.jpg" width="300px" height="200px">
+                <video src="image/39.mp4" width="300px" height="200px" controls="controls"></video>
+                <img src="image/42.jpg" width="250px" height="200px">
+                <img src="image/41.jpg" width="200px" height="200px">
+                <img src="image/40.jpg" width="250px" height="200px">
+                <img src="image/43.jpg" width="250px" height="200px">
+                <video src="image/46.mp4" width="300px" height="200px" controls="controls"></video>
+                <img src="image/47.jpg" width="150px" height="200px">
+                <video src="image/45.mp4" width="300px" height="200px" controls="controls"></video>
+                <img src="image/38.jpg" width="250px" height="300px">
+                <p>小宇的字很好看。小宇带我去找他的好朋友玩 这一次是他第一次对我的承诺说带我去游乐园 我们回去的路上他录了个视频 我以为我们后来都会天天录或者经常录 然后他忘记了</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/51.jpg" width="250px" height="300px">
+                <img src="image/50.jpg" width="250px" height="200px">
+                <video src="image/52.mp4" width="300px" height="200px" controls="controls"></video>
+                <video src="image/53.mp4" width="300px" height="200px" controls="controls"></video>
+                <img src="image/48.jpg" width="200px" height="200px">
+                <img src="image/49.jpg" width="200px" height="200px">
+                <p>赔小宇去染头发 他不回家</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/54.jpg" width="150px" height="200px">
+                <img src="image/55.jpg" width="150px" height="200px">
+                <p>只属于我的迪迦！</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/56.jpg" width="350px" height="250px">
+                <img src="image/57.jpg" width="150px" height="200px">
+                <img src="image/58.jpg" width="150px" height="200px">
+                <img src="image/59.jpg" width="150px" height="200px">
+                <img src="image/60.jpg" width="150px" height="200px">
+                <p>我们一起去逛街 把我喜欢的吉他给他 他说他弹给我听 最后发现被骗了</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <video src="image/61.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>上班日常</p>
+            </li>
+            <li>
+                <h>2021.3</h>
+                <br>
+                <img src="image/62.jpg" width="150px" height="200px">
+                <img src="image/63.jpg" width="150px" height="200px">
+                <img src="image/64.jpg" width="150px" height="200px">
+                <img src="image/65.jpg" width="150px" height="200px">
+                <img src="image/66.jpg" width="150px" height="200px">
+                <img src="image/67.jpg" width="150px" height="200px">
+                <img src="image/68.jpg" width="150px" height="200px">
+                <p>去逛街 他吃冰淇淋 我喝他口中的冰雪奇缘的“海盐芝士钙奶”。我们一起去上班 但是是错开到店上的</p>
+            </li>
+            <li>
+                <h>2021.4</h>
+                <br>
+                <img src="image/69.jpg" width="150px" height="200px">
+                <img src="image/70.jpg" width="150px" height="200px">
+                <video src="image/71.mp4" width="300px" height="200px" controls="controls"></video>
+                <video src="image/72.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>我学着骑大车车 给小宇的车装了个叮当猫</p>
+            </li>
+            <li>
+                <h>2021.4</h>
+                <br>
+                <img src="image/73.jpg" width="200px" height="150px">
+                <img src="image/74.jpg" width="200px" height="150px">
+                <video src="image/75.mp4" width="300px" height="200px" controls="controls"></video>
+                <video src="image/76.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>我们买了好多好吃的</p>
+            </li>
+            <li>
+                <h>2021.4</h>
+                <br>
+                <video src="image/77.mp4" width="300px" height="200px" controls="controls"></video>
+                <img src="image/80.jpg" width="150px" height="150px">
+                <img src="image/81.jpg" width="150px" height="200px">
+                <img src="image/79.jpg" width="150px" height="150px">
+                <img src="image/78.jpg" width="200px" height="150px">
+                <img src="image/82.jpg" width="150px" height="200px">
+                <p>我们拍照 比爱心的动作</p>
+            </li>
+            <li>
+                <h>2021.4</h>
+                <br>
+                <img src="image/83.jpg" width="150px" height="200px">
+                <img src="image/84.jpg" width="150px" height="200px">
+                <p>可爱</p>
+            </li>
+            <li>
+                <h>2021.4</h>
+                <br>
+                <img src="image/85.jpg" width="200px" height="150px">
+                <video src="image/86.mp4" width="300px" height="200px" controls="controls"></video>
+                <video src="image/87.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>给小宇点鲍鱼饭然后他说“人家直接送个锅来给你啊！”</p>
+            </li>
+            <li>
+                <h>2021.4</h>
+                <br>
+                <img src="image/88.jpg" width="150px" height="200px">
+                <img src="image/89.jpg" width="250px" height="200px">
+                <img src="image/90.jpg" width="150px" height="200px">
+                <img src="image/91.jpg" width="150px" height="200px">
+                <img src="image/92.jpg" width="150px" height="200px">
+                <img src="image/93.jpg" width="150px" height="200px">
+                <img src="image/94.jpg" width="200px" height="200px">
+                <video src="image/95.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>假装生气走了 然后买小蛋糕哄小宇 他也很开心 我们还拍了照片</p>
+            </li>
+            <li>
+                <h>2021.4</h>
+                <br>
+                <img src="image/96.jpg" width="200px" height="150px">
+                <p>小宇跑很远来我家给我送好吃的 带了我很想吃的桃子饼干然后掉了 我们去吃米线的路上又找到了小饼干 感觉很开心</p>
+            </li>
+            <li>
+                <h>2021.4</h>
+                <br>
+                <img src="image/97.jpg" width="200px" height="150px">
+                <p>我们去吃麻辣烫然后干杯 哈哈哈</p>
+            </li>
+            <li>
+                <h>2021.4</h>
+                <br>
+                <img src="image/98.jpg" width="200px" height="200px">
+                <img src="image/99.jpg" width="200px" height="150px">
+                <p>我们上早班然后他来接我 那天太阳也很温暖 早晨的空气很新鲜  我们还去吃了我上学时候喜欢吃的 他带我找回学生时代感觉</p>
+            </li>
+            <li>
+                <h>2021.4</h>
+                <br>
+                <img src="image/100.jpg" width="200px" height="150px">
+                <img src="image/101.jpg" width="200px" height="150px">
+                <img src="image/102.jpg" width="200px" height="150px">
+                <p>我们去优衣库买了第一件情侣装 小太阳的T恤</p>
+            </li>
+            <li>
+                <h>2021.4</h>
+                <br>
+                <img src="image/103.jpg" width="200px" height="150px">
+                <img src="image/104.jpg" width="200px" height="150px">
+                <img src="image/105.jpg" width="150px" height="200px">
+                <img src="image/106.jpg" width="150px" height="200px">
+                <p>小宇在旁边认真的思考 做笔记</p>
+            </li>
+            <li>
+                <h>2021.4</h>
+                <br>
+                <video src="image/107.mp4" width="300px" height="200px" controls="controls"></video>
+                <video src="image/108.mp4" width="300px" height="200px" controls="controls"></video>
+                <video src="image/109.mp4" width="300px" height="200px" controls="controls"></video>
+                <video src="image/110.mp4" width="300px" height="200px" controls="controls"></video>
+                <video src="image/112.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>我们一起上晚班 他赶偷吃火腿肠的猫猫</p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <img src="image/114.jpg" width="200px" height="150px">
+                <video src="image/113.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>小宇骑着他的拖拉机来接我啦</p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <img src="image/118.jpg" width="200px" height="400px">
+                <img src="image/115.jpg" width="150px" height="200px">
+                <img src="image/116.jpg" width="150px" height="200px">
+                <img src="image/117.jpg" width="150px" height="200px">
+                <p>我们去呈贡找他的好朋友 只是没想到就这一晚离开的视线小宇就不乖了</p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <img src="image/120.jpg" width="150px" height="200px">
+                <img src="image/121.jpg" width="150px" height="200px">
+                <p>第二天一大早接到电话说小花猫受伤了 我赶紧去找小花猫 结果看到小花猫病恹恹的躺在床上 委屈巴巴的不敢看我 走了之后还要找他手上戴着的表带在哪里 是我给他的哦</p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <img src="image/123.jpg" width="150px" height="200px">
+                <img src="image/124.jpg" width="150px" height="200px">
+                <p>在外面照顾小花猫 不能吃辣的 每天要涂药 可怜兮兮的</p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <img src="image/125.jpg" width="200px" height="400px">
+                <img src="image/126.jpg" width="200px" height="400px">
+                <img src="image/127.jpg" width="200px" height="400px">
+                <p>小宇很勇敢 才过了两三天没请假又回去上班了 然后被拍照作为了例子</p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <img src="image/128.jpg" width="150px" height="200px">
+                <p>在外面照顾小花猫 不能吃辣的 每天要涂药 可怜兮兮的</p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <img src="image/130.jpg" width="200px" height="150px">
+                <img src="image/132.jpg" width="200px" height="150px">
+                <img src="image/131.jpg" width="150px" height="200px">
+                <img src="image/133.jpg" width="150px" height="200px">
+                <img src="image/129.jpg" width="150px" height="200px">
+                <p>小花猫生病都很让着他了 还惹我生气</p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <img src="image/134.jpg" width="200px" height="400px">
+                <img src="image/135.jpg" width="150px" height="200px">
+                <img src="image/136.jpg" width="200px" height="150px">
+                <img src="image/137.jpg" width="150px" height="200px">
+                <img src="image/138.jpg" width="150px" height="200px">
+                <img src="image/139.jpg" width="150px" height="200px">
+                <img src="image/140.jpg" width="200px" height="150px">
+                <img src="image/141.jpg" width="200px" height="150px">
+                <p>小宇画的小白兔 慢慢的没有委屈巴巴的模样了</p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <img src="image/144.jpg" width="200px" height="150px">
+                <img src="image/142.jpg" width="200px" height="150px">
+                <img src="image/143.jpg" width="150px" height="200px">
+                <p>腿长了不起啊  小花猫还是有点在意自己的伤口</p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <video src="image/145.mp4" width="300px" height="200px" controls="controls"></video>
+                <img src="image/146.jpg" width="150px" height="200px">
+                <img src="image/147.jpg" width="150px" height="200px">
+                <img src="image/148.jpg" width="150px" height="200px">
+                <p>谁能想到当初干干净净的小宇居然原形毕露 居然抠鼻子 后来更是一发不可收拾。伤口的疤在慢慢掉落 慢慢开始好转</p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <img src="image/149.jpg" width="200px" height="150px">
+                <img src="image/150.jpg" width="150px" height="200px">
+                <img src="image/151.jpg" width="150px" height="200px">
+                <p>我们一起吃白桃口味的冰淇淋 这个时候我已经辞职了</p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <img src="image/152.jpg" width="150px" height="200px">
+                <img src="image/153.jpg" width="150px" height="200px">
+                <p>我们打算拍一个照片的 结果拍出来很丑然后就放弃了/p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <img src="image/154.jpg" width="150px" height="200px">
+                <img src="image/155.jpg" width="150px" height="200px">
+                <img src="image/156.jpg" width="150px" height="200px">
+                <p>一起变成落汤鸡了 小宇说那个照片好高级 像艺术照一样</p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <img src="image/157.jpg" width="150px" height="200px">
+                <img src="image/158.jpg" width="150px" height="200px">
+                <img src="image/159.jpg" width="200px" height="150px">
+                <p>吃当当劳</p>
+            </li>
+            <li>
+                    <h>2021.5</h>
+                    <br>
+                    <img src="image/160.jpg" width="200px" height="150px">
+                    <img src="image/161.jpg" width="150px" height="200px">
+                    <p>小宇很早就睡着了 帮他扎着头发 因为看他好像很热</p>
+            </li>
+            <li>
+                    <h>2021.5</h>
+                    <br>
+                    <img src="image/154.jpg" width="150px" height="200px">
+                    <img src="image/155.jpg" width="150px" height="200px">
+                    <img src="image/156.jpg" width="150px" height="200px">
+                    <p>我想带他去灶台火锅 结果有点意外他说没事 我们就去了一家胖子火锅 味道也还行吧 他很乖巧</p>
+            </li>
+            <li>
+                <h>2021.5</h>
+                <br>
+                <img src="image/165.jpg" width="200px" height="150px">
+                <img src="image/166.jpg" width="200px" height="150px">
+                <p>小神厨 看见他假装娴熟的烤烧烤</p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <video src="image/167.mp4" width="300px" height="200px" controls="controls"></video>
+                <video src="image/168.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>让他疯 那么嚣张  被欺负了吧</p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <img src="image/169.jpg" width="150px" height="200px">
+                <img src="image/170.jpg" width="150px" height="200px">
+                <img src="image/171.jpg" width="150px" height="200px">
+                <img src="image/172.jpg" width="150px" height="200px">
+                <img src="image/173.jpg" width="150px" height="200px">
+                <p>我们去奶茶店 然后他不耐烦帮我拍照 最后我们就吵架了</p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <img src="image/174.jpg" width="150px" height="200px">
+                <p>陪他打疫苗</p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <img src="image/175.jpg" width="250px" height="150px">
+                <p>买了一样的裤子 第二个情侣衣服</p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <img src="image/176.jpg" width="150px" height="200px">
+                <img src="image/177.jpg" width="150px" height="200px">
+                <img src="image/178.jpg" width="150px" height="200px">
+                <p>我们一起带小夹子拍照片</p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <img src="image/179.jpg" width="150px" height="200px">
+                <p>喜欢小夹子又不好意思带 每次看见我就赶紧悄悄拿出来带着</p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <img src="image/180.jpg" width="150px" height="200px">
+                <p>我们又吵架了 他一个人坐着 然后我走了后又回去了</p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <img src="image/182.jpg" width="150px" height="150px">
+                <video src="image/181.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>在店里吃辣的黄瓜</p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <img src="image/183.jpg" width="150px" height="150px">
+                <p>给小宇转账买了篮球 会发光 他很喜欢/p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <img src="image/184.jpg" width="150px" height="200px">
+                <img src="image/185.jpg" width="150px" height="200px">
+                <video src="image/186.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>带上新篮球一起去打球</p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <img src="image/187.jpg" width="200px" height="150px">
+                <img src="image/191.jpg" width="150px" height="200px">
+                <img src="image/188.jpg" width="150px" height="150px">
+                <img src="image/189.jpg" width="150px" height="200px">
+                <img src="image/190.jpg" width="150px" height="150px">
+                <p>带他喝我喜欢的奶茶 还有拍了有史以来第一张好看的照片</p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <video src="image/192.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>李建宇虐待小动物</p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <img src="image/193.jpg" width="200px" height="150px">
+                <img src="image/194.jpg" width="150px" height="150px">
+                <p>我们去他家旁边的奶茶店吃东西 晚上又假装生气买了小蛋糕哄他</p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <img src="image/195.jpg" width="150px" height="200px">
+                <img src="image/196.jpg" width="150px" height="150px">
+                <p>小宇抱着我的脚睡觉</p>
+            </li>
+            <li>
+                <h>2021.6</h>
+                <br>
+                <img src="image/197.jpg" width="150px" height="200px">
+                <img src="image/198.jpg" width="150px" height="200px">
+                <img src="image/199.jpg" width="150px" height="200px">
+                <p>给小宇画了一个图案 有我们的名字 用这个图案做了个衣服送给他</p>
+            </li>
+            <li>
+                <h>2021.7</h>
+                <br>
+                <video src="image/200.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>李建宇与他的好朋友  好像画风不太对</p>
+            </li>
+            <li>
+                <h>2021.7</h>
+                <br>
+                <img src="image/204.jpg" width="150px" height="200px">
+                <img src="image/202.jpg" width="150px" height="200px">
+                <video src="image/203.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>可爱的小老鼠</p>
+            </li>
+            <li>
+                <h>2021.7</h>
+                <br>
+                <img src="image/204.jpg" width="150px" height="200px">
+                <img src="image/205.jpg" width="150px" height="200px">
+                <video src="image/206.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>带我去莲华公园划船</p>
+            </li>
+            <li>
+                <h>2021.7</h>
+                <br>
+                <img src="image/207.jpg" width="200px" height="400px">
+                <p>吵架了 他说了很难听的话</p>
+            </li>
+            <li>
+                <h>2021.7</h>
+                <br>
+                <img src="image/208.jpg" width="150px" height="200px">
+                <img src="image/209.jpg" width="150px" height="200px">
+                <p>去很远的地方拉烟 小宇坐在后面高高的看着后面的人</p>
+            </li>
+            <li>
+                <h>2021.7</h>
+                <br>
+                <img src="image/210.jpg" width="150px" height="200px">
+                <p></p>
+            </li>
+            <li>
+                <h>2021.7</h>
+                <br>
+                <video src="image/211.mp4" width="300px" height="200px" controls="controls"></video>
+                <video src="image/212.mp4" width="300px" height="200px" controls="controls"></video>
+                <img src="image/214.jpg" width="150px" height="200px">
+                <img src="image/215.jpg" width="150px" height="200px">
+                <video src="image/213.mp4" width="300px" height="200px" controls="controls"></video>
+                <img src="image/217.jpg" width="250px" height="200px">
+                <img src="image/218.jpg" width="250px" height="200px">
+                <img src="image/219.jpg" width="250px" height="200px">
+                <p>终于实现了刚认识的诺言 带我去了游乐园 小宇玩了一个项目被吓得不说话了</p>
+            </li>
+            <li>
+                <h>2021.7</h>
+                <br>
+                <video src="image/220.mp4" width="300px" height="200px" controls="controls"></video>
+                <video src="image/221.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>和小宇去了KTV 看他唱歌</p>
+            </li>
+            <li>
+                <h>2021.7</h>
+                <br>
+                <img src="image/223.jpg" width="200px" height="1000px">
+                <p>去了重庆几天 然后回来没有告诉他 故意很冷淡想给他一个惊喜</p>
+            </li>
+            <li>
+                <h>2021.7</h>
+                <br>
+                <img src="image/224.jpg" width="200px" height="150px">
+                <p>从重庆回来了带他去了一家很不错的火锅 他喜欢那个芭比娃娃哈哈哈</p>
+            </li>
+            <li>
+                <h>2021.</h>
+                <br>
+                <img src="image/225.jpg" width="200px" height="150px">
+                <p>很小的汽锅鸡</p>
+            </li>
+            <li>
+                <h>2021.8</h>
+                <br>
+                <img src="image/226.jpg" width="200px" height="1600px">
+                <img src="image/227.jpg" width="200px" height="400px">
+                <img src="image/228.jpg" width="200px" height="400px">
+                <img src="image/229.jpg" width="200px" height="400px">
+                <p>小宇被骗钱了</p>
+            </li>
+            <li>
+                <h>2021.8</h>
+                <br>
+                <video src="image/230.mp4" width="300px" height="200px" controls="controls"></video>
+                <img src="image/231.jpg" width="200px" height="150px">
+                <img src="image/232.jpg" width="250px" height="150px">
+                <img src="image/233.jpg" width="200px" height="150px">
+                <p>七夕节的时候我们互相没有说送对方小礼物 但是到了那天俩个人都收到了小礼物 开心</p>
+            </li>
+            <li>
+                <h>2021.8</h>
+                <br>
+                <img src="image/234.jpg" width="150px" height="200px">
+                <img src="image/235.jpg" width="150px" height="200px">
+                <img src="image/236.jpg" width="150px" height="200px">
+                <p>小宇来我家找我然后我给他拍照 帅</p>
+            </li>
+            <li>
+                <h>2021.8</h>
+                <br>
+                <img src="image/237.jpg" width="150px" height="200px">
+                <p>小宇抱我腿腿睡觉</p>
+            </li>
+            <li>
+                <h>2021.8</h>
+                <br>
+                <img src="image/238.jpg" width="150px" height="150px">
+                <img src="image/239.jpg" width="200px" height="150px">
+                <p>去KTV</p>
+            </li>
+            <li>
+                <h>2021.7</h>
+                <br>
+                <video src="image/240.mp4" width="300px" height="200px" controls="controls"></video>
+                <p>来我家在我床上睡着了 还吃了我做的重庆小面</p>
+            </li>
+            <li>
+                <h>2021.8</h>
+                <br>
+                <img src="image/241.jpg" width="200px" height="150px">
+                <img src="image/243.jpg" width="200px" height="150px">
+                <img src="image/242.jpg" width="150px" height="200px">
+                <img src="image/244.jpg" width="150px" height="200px">
+                <img src="image/245.jpg" width="200px" height="150px">
+                <p>我们去打卡了云咖啡 很漂亮的咖啡店 在翠湖旁边很大</p>
+            </li>
+        </div>
+        <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="音乐/a_hisa - Town of Windmill (风车小镇).mp3">
+        </audio>
+    </body>
+</html>

@@ -1,0 +1,288 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset = "utf-8">
+    </head>
+    <style>
+        p{
+            margin-top: 50px;
+            margin-left: 50px;
+            color: cornsilk;
+            font-size: 50px;
+            }
+        .all{
+            margin-top: -200px;
+                margin-left: -150px;
+                overflow: -moz-hidden-unscrollable;overflow-x:hidden;
+            }
+        .box {
+			width: 2000px;
+            margin-left: 100px;
+            
+		}
+		.p {
+			margin-left: 200px;
+		}
+		ul {
+			list-style: none;
+            margin-top: 200px;
+            margin-left: 350px;
+            margin-right: 200px;
+			padding: 0;
+			background: url(image/2.0.jpg);
+			/* 溢出属性，hidden隐藏，auto自动处理 */
+		}
+		ul li {
+			float: left;  /*浮动元素横向排列，同时不占据空间大小，将会导致父元素的高度坍塌*/
+			margin: 30px;
+			border: 1px solid white;
+			border-color: #ddd #bbb #aaa #ccc;
+			background: #eee;
+		}
+		.box ul li img {
+			width: 600px;
+			height: 100px;
+			border: 1px solid white;
+			border-color: #aaa #ccc #ddd #bbb;
+			vertical-align: top; /*图片的默认上下对齐方式为baseline对齐，改为top即可*/
+			background: white;
+		}
+		.p ul li img{
+			width: 500px;
+			height: 700px;
+		}
+		/*鼠标滑到照片时的变化*/
+		.box ul li img:hover {
+			transform: scale(2);  /*变形样式： 可以放大缩小、3D旋转*/
+			transition: all 1s; /*过渡样式： 将指定的属性在变化时产生过渡效果 即放慢变化速度*/
+		}
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        .kuang{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background-image: linear-gradient(180deg,rgb(78, 168, 241),rgb(37, 91, 241));
+
+        }
+        .bubble{
+            position: absolute;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: inset 0 0 8px  #fff;
+            animation: flutter 10s infinite;
+            opacity: 0;
+        }
+        @keyframes flutter {
+            0%{
+                transform: translateX(0);
+                bottom: -100px;
+                opacity: 1;
+            }
+            50%{
+                transform: translateX(100px);
+                opacity: 0.5;
+            }
+
+            
+            100%{
+                transform: translateX(0px);
+                bottom: 100%;
+                opacity: 0;
+
+            }
+        }
+        .bubble:nth-child(1){
+            left: -10%;
+            width: 50px;
+            height: 50px; 
+            animation-duration: 9s;
+            animation-delay: 0.1s;
+        }
+        .bubble:nth-child(2){
+            left: 15%;
+            width: 20px;
+            height: 20px;
+            animation-duration: 6s;
+            animation-delay: 1.5s;
+
+        }
+        .bubble:nth-child(3){
+            left: 20%;
+            width: 60px;
+            height: 60px;
+            animation-duration: 10s;
+            
+
+
+        }
+        .bubble:nth-child(4){
+            left: 30%;
+            width: 30px;
+            height: 30px;
+            animation-duration: 5.5s;
+            animation-delay: 1.5s;
+
+        }
+        .bubble:nth-child(5){
+            left: 40%x;
+            width: 50px;
+            height: 50px;
+            animation-duration: 12s;
+            
+
+
+        }
+        .bubble:nth-child(6){
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            animation-duration: 6s;
+            animation-delay: 1s;
+
+        }
+        .bubble:nth-child(7){
+            left: 60%;
+            width: 40px;
+            height: 40px;
+            animation-duration: 8s;
+            animation-delay: 1s;
+
+        }
+        .bubble:nth-child(8){
+            left: 65%;
+            width: 60px;
+            height: 60px;
+            animation-duration: 15s;
+          
+        }
+        .bubble:nth-child(9){
+            left: 80%;
+            width: 55px;
+            height: 55px;
+            animation-duration: 9s;
+            animation-delay: 0.5s;
+            
+        }
+        .bubble:nth-child(10){
+            left: 100%;
+            width: 40px;
+            height: 40px;
+            animation-duration: 12s;
+        }
+        </style>
+    
+    <body>
+        <p>What we say~</p>
+        <div class="all">
+            <div class="box">
+                <ul>
+                    <li>
+                        <img src="image/20.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/19.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/18.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/17.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/16.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/15.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/14.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/13.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/12.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/11.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/10.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/9.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/8.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/7.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/6.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/5.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/4.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/3.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/2.png" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/1.png" alt="description" />
+                    </li>
+                </ul>
+            </div>
+            <div class="p">
+                <ul>
+                    <li>
+                        <img src="image/23.jpg" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/24.jpg" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/26.jpg" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/27.jpg" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/28.jpg" alt="description" />
+                    </li>
+                    <li>
+                        <img src="image/29.jpg" alt="description" />
+                    </li>
+                </ul>
+            </div>
+            </table>
+        <div class="kuang">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        </div>
+        <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="音乐/melancholy.mp3">
+        </audio>
+    </body>
+</html>
